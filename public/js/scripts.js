@@ -16,6 +16,11 @@ const submit = function( e ) {
                     time: final_time/100 },
                 body = JSON.stringify( json )
 
+        if (nickname.value === "Lora") {
+            console.log('lora')
+            document.body.style.background = "url('/Assets/usian_bolt.jpg') no-repeat center top";
+        }
+
         document.getElementById("hide_text").style.visibility = "visible"
 
         fetch( '/submit', {
