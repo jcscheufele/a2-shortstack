@@ -127,6 +127,7 @@ const restart = function() {
     started=false
     submitted=false
     document.getElementById("timer").innerText = "Timer"
+    document.body.style.background = "#eee"
 }
 
 window.onload = function() {
